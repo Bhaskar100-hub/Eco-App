@@ -1,4 +1,4 @@
-package wary.bhaskar.ecoapp.ui.slideshow
+package wary.bhaskar.ecoapp.ui.team
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import wary.bhaskar.ecoapp.databinding.FragmentSlideshowBinding
+import wary.bhaskar.ecoapp.databinding.FragmentTeamBinding
 
-class SlideshowFragment : Fragment() {
+class TeamFragment : Fragment() {
 
-    private var _binding: FragmentSlideshowBinding? = null
+    private var _binding: FragmentTeamBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class SlideshowFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val slideshowViewModel =
-            ViewModelProvider(this).get(SlideshowViewModel::class.java)
+        val teamViewModel =
+            ViewModelProvider(this).get(TeamViewModel::class.java)
 
-        _binding = FragmentSlideshowBinding.inflate(inflater, container, false)
+        _binding = FragmentTeamBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textSlideshow
-        slideshowViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textTeam
+        teamViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

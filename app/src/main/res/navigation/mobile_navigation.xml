@@ -8,18 +8,36 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="wary.bhaskar.ecoapp.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="@string/home"
         tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_noixorgo"
+        android:name="wary.bhaskar.ecoapp.ui.noixorgo.NoixorgoFragment"
+        android:label="@string/noixorgo"
+        tools:layout="@layout/fragment_noixorgo" />
+
+    <fragment
+        android:id="@+id/nav_events"
+        android:name="wary.bhaskar.ecoapp.ui.events.EventsFragment"
+        android:label="@string/events"
+        tools:layout="@layout/fragment_event" />
+
+    <fragment
+        android:id="@+id/nav_blog"
+        android:name="wary.bhaskar.ecoapp.ui.blog.BlogFragment"
+        android:label="@string/blog"
+        tools:layout="@layout/fragment_blog" />
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="wary.bhaskar.ecoapp.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="wary.bhaskar.ecoapp.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_team"
+        android:name="wary.bhaskar.ecoapp.ui.team.TeamFragment"
+        android:label="@string/team"
+        tools:layout="@layout/fragment_team" />
 </navigation>

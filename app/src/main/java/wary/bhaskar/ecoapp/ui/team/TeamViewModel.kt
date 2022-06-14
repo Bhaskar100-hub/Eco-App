@@ -1,13 +1,13 @@
-package wary.bhaskar.ecoapp.ui.slideshow
+package wary.bhaskar.ecoapp.ui.team
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class SlideshowViewModel : ViewModel() {
+class TeamViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is slideshow Fragment"
+        value = "Team Fragment"
     }
     val text: LiveData<String> = _text
 }
