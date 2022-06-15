@@ -50,4 +50,7 @@ dependencies {
 
     implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
     implementation 'com.github.Fuadafdhal:Auto-Image-Slider:1.0'
+
+    // Image Circle
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 }
