@@ -4,39 +4,16 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import wary.bhaskar.ecoapp.databinding.FragmentBlogBinding
+import wary.bhaskar.ecoapp.R
 
 class BlogFragment : Fragment() {
-
-    private var _binding: FragmentBlogBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val blogViewModel =
-            ViewModelProvider(this).get(BlogViewModel::class.java)
-
-        _binding = FragmentBlogBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-        val textView: TextView = binding.textBlog
-        blogViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+        val root = inflater.inflate(R.layout.fragment_blog, container, false)
         return root
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }
