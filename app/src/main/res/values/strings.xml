@@ -13,4 +13,13 @@
     <string name="blog">BLOG</string>
     <string name="gallery">GALLERY</string>
     <string name="team">TEAM</string>
+
+    <string-array name="List">
+        <item>2022</item>
+        <item>2021</item>
+        <item>2020</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+    </string-array>
 </resources>
