@@ -1,214 +1,332 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.team.TeamFragment"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:context=".ui.team.TeamFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/ll_one">
-
-        <TextView
-            android:id="@+id/tv_aboutUs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="From Director's Desk"
-            android:textColor="@color/Code555555"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+        android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/ll_outer1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rl_relative"
-            android:layout_below="@+id/tv_aboutUs"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/civ_image1"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/image1"
-                app:civ_border_color="@color/Code555555"
-                app:civ_border_width="2dp" />
+            <TextView
+                android:id="@+id/tv_titleDesk1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="From Director's Desk"
+                android:textColor="@color/Code555555"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <LinearLayout
+                android:id="@+id/ll_profile1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_below="@+id/tv_titleDesk1"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/tv_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="16dp"
-                    android:text="Sivaji Bandyopadhyay"
-                    android:textColor="@color/Code555555"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/civ_image1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/image1"
+                    app:civ_border_color="@color/Code555555"
+                    app:civ_border_width="2dp" />
 
-                <TextView
-                    android:id="@+id/tv_designation"
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_name"
+                    android:orientation="vertical"
                     android:layout_marginLeft="16dp"
-                    android:layout_marginTop="16dp"
-                    android:text="Director, Nit Silchar"
-                    android:textColor="@color/gray"
-                    android:textSize="16sp" />
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sivaji Bandyopadhyay"
+                        android:textColor="@color/Code555555"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_designation1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_name1"
+                        android:layout_marginTop="16dp"
+                        android:text="Director, Nit Silchar"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/tv_content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_profile1"
+                android:layout_marginTop="8dp"
+                android:text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/tv_aboutUsContent"
+        <View
+            android:id="@+id/v_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ll_outer1"
+            android:layout_marginTop="8dp"
+            android:background="#77888888" />
+
+        <LinearLayout
+            android:id="@+id/ll_outer2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/rl_relative"
+            android:orientation="vertical"
+            android:layout_below="@id/v_line1"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_titleDesk2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From Director's Desk"
+                android:textColor="@color/Code555555"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_profile2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_titleDesk2"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/civ_image2"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/image1"
+                    app:civ_border_color="@color/Code555555"
+                    app:civ_border_width="2dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sivaji Bandyopadhyay"
+                        android:textColor="@color/Code555555"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_designation2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_name2"
+                        android:layout_marginTop="16dp"
+                        android:text="Director, Nit Silchar"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_content2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_profile2"
+                android:layout_marginTop="8dp"
+                android:text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
             android:layout_marginTop="8dp"
-            android:text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-            android:textColor="@color/gray"
-            android:textSize="16sp" />
+            android:background="#77888888"
+            android:layout_below="@+id/ll_outer2"/>
+
+        <LinearLayout
+            android:id="@+id/ll_outer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/v_line2"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_titleDesk3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From Director's Desk"
+                android:textColor="@color/Code555555"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_profile3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_titleDesk3"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/civ_image3"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:src="@drawable/image1"
+                    app:civ_border_color="@color/Code555555"
+                    app:civ_border_width="2dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sivaji Bandyopadhyay"
+                        android:textColor="@color/Code555555"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_designation3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_name3"
+                        android:layout_marginTop="16dp"
+                        android:text="Director, Nit Silchar"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_content3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_profile3"
+                android:layout_marginTop="8dp"
+                android:text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#77888888"
+            android:layout_below="@+id/ll_outer3"/>
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+            android:id="@+id/ttButtonGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:justifyContent="space_between"
+            app:flexWrap="wrap"
+            app:toggle_selectableAmount="3"
+            app:toggle_requiredAmount="1"
+            app:toggle_selectAnimation="circular_reveal"
+            android:layout_below="@id/ll_outer3"
+            android:layout_marginTop="8dp"> <!-- this attribute is from the underlying FlexboxLayout -->
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn1"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="2022-23"
+                app:toggle_selectedBackgroundColor="#FFC107"/>
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn2"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="2021-22"
+                app:toggle_selectedBackgroundColor="#FF5722"/>
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn3"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="2020-21"
+                app:toggle_selectedBackgroundColor="#FF5722"/>
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn4"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="2019-20"
+                app:toggle_selectedBackgroundColor="#E91E63"/>
+
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:layout_margin="10dp"
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="2018-19"
+                app:toggle_selectedBackgroundColor="#4CAF50"/>
+
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:layout_margin="10dp"
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="2017-18"
+                app:toggle_selectedBackgroundColor="#009688"/>
+
+        </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
 
     </RelativeLayout>
 
-    <View
-        android:id="@+id/v_line1"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="16dp"
-        android:background="#77888888"
-        android:layout_below="@+id/ll_one"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/ll_two"
-        android:layout_below="@+id/v_line1"
-        android:layout_marginTop="16dp">
-
-        <TextView
-            android:id="@+id/tv_aboutUs2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="From Director's Desk"
-            android:textColor="@color/Code555555"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/rl_relative2"
-            android:layout_below="@+id/tv_aboutUs2"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal">
-
-            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/civ_image2"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/image1"
-                app:civ_border_color="@color/Code555555"
-                app:civ_border_width="2dp" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tv_name2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="16dp"
-                    android:text="Sivaji Bandyopadhyay"
-                    android:textColor="@color/Code555555"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/tv_designation2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_name2"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="16dp"
-                    android:text="Director, Nit Silchar"
-                    android:textColor="@color/gray"
-                    android:textSize="16sp" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/tv_aboutUsContent2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/rl_relative2"
-            android:layout_marginTop="8dp"
-            android:text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-            android:textColor="@color/gray"
-            android:textSize="16sp" />
-
-    </LinearLayout>
-
-    <View
-        android:id="@+id/v_line2"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="16dp"
-        android:background="#77888888"
-        android:layout_below="@+id/ll_two"/>
-
-    <com.google.android.material.button.MaterialButtonToggleGroup
-        android:id="@+id/toggleButtonGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:singleSelection="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/v_line2"
-        android:layout_marginTop="16dp"
-        android:layout_centerHorizontal="true">
-
-        <Button
-            android:id="@+id/btnAndroid"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Android" />
-
-        <Button
-            android:id="@+id/btnFlutter"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Flutter" />
-
-        <Button
-            android:id="@+id/btnWeb"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Web" />
-
-    </com.google.android.material.button.MaterialButtonToggleGroup>
-
-</RelativeLayout>
+</ScrollView>
